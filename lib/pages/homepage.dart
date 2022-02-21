@@ -1,10 +1,7 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:hotel/theme/theme.dart';
 import 'package:hotel/widget/cardCategories.dart';
 import 'package:hotel/widget/cardHotel.dart';
-import 'package:hotel/widget/testCard.dart';
 
 class HomePageHotel extends StatelessWidget {
   @override
@@ -13,68 +10,9 @@ class HomePageHotel extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            header(),
+            _Headers(),
             hotHotel(),
             cardCategory(),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget header() {
-    return SafeArea(
-      child: Container(
-        margin: EdgeInsets.all(30),
-        child: Column(
-          children: [
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    ImageIcon(AssetImage('asset/Nav.png')),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    Text(
-                      'Find Your \nPerfect Place!',
-                      style: titleHomePage,
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            TextFormField(
-              cursorColor: primaryColor,
-              onChanged: (value) {},
-              decoration: InputDecoration(
-                contentPadding: EdgeInsets.only(left: 20, top: 20, bottom: 10),
-                fillColor: Colors.grey.withOpacity(0.1),
-                filled: true,
-                enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                    borderSide: BorderSide.none),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(30),
-                ),
-                suffixIcon:
-                    // IconButton(
-                    //   onPressed: () {},
-                    //   icon: Image.asset('asset/Search Button.png'),
-                    // ),
-                    IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.search_rounded),
-                ),
-                hintText: 'Find your dream home',
-                hintStyle: inputHomePage,
-              ),
-            ),
           ],
         ),
       ),
@@ -163,6 +101,70 @@ class HomePageHotel extends StatelessWidget {
             ],
           )
         ],
+      ),
+    );
+  }
+}
+
+class _Headers extends StatelessWidget {
+  const _Headers({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Container(
+        margin: EdgeInsets.all(30),
+        child: Column(
+          children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    ImageIcon(AssetImage('asset/Nav.png')),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Text(
+                      'Find Your \nPerfect Place!',
+                      style: titleHomePage,
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            TextFormField(
+              cursorColor: primaryColor,
+              onChanged: (value) {},
+              decoration: InputDecoration(
+                contentPadding: EdgeInsets.only(left: 20, top: 20, bottom: 10),
+                fillColor: Colors.grey.withOpacity(0.1),
+                filled: true,
+                enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: BorderSide.none),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                suffixIcon:
+                    // IconButton(
+                    //   onPressed: () {},
+                    //   icon: Image.asset('asset/Search Button.png'),
+                    // ),
+                    IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.search_rounded),
+                ),
+                hintText: 'Find your dream home',
+                hintStyle: inputHomePage,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
