@@ -3,10 +3,10 @@ import 'package:hotel/pages/secondpage.dart';
 import 'package:hotel/theme/theme.dart';
 
 class CardHotel extends StatelessWidget {
-  final String imageUrl;
-  final String title;
-  final String subtitle;
-  final String ratings;
+  final String? imageUrl;
+  final String? title;
+  final String? subtitle;
+  final String? ratings;
 
   CardHotel({this.imageUrl, this.title, this.subtitle, this.ratings});
 
@@ -52,7 +52,7 @@ class CardHotel extends StatelessWidget {
                   topLeft: Radius.circular(20),
                   topRight: Radius.circular(20),
                 ),
-                child: Image.asset(imageUrl,
+                child: Image.asset(imageUrl!,
                     //'asset/image new.png',
                     // width: 300,
                     height: 110,
@@ -80,7 +80,7 @@ class CardHotel extends StatelessWidget {
                     ),
                     // Spacer(),
                     Image.asset(
-                      ratings,
+                      ratings!,
                       //'asset/Ratings.png',
                       height: 10,
                     )
@@ -89,24 +89,8 @@ class CardHotel extends StatelessWidget {
               ),
             ],
           ),
-          // Spacer(),
-          //       Text('asasd')
+          
         ),
-        // child: Column(
-        //   children: [
-        //     Image.asset(
-        //       'asset/image 1.png',
-        //       //fit: BoxFit.cover,
-        //     ),
-        //     Align(
-        //       alignment: Alignment.bottomLeft,
-        //       child: Text(
-        //         'data',
-        //         style: cardHomePage,
-        //       ),
-        //     ),
-        //   ],
-        // ),
       ),
       // ),
     );

@@ -3,10 +3,10 @@ import 'package:hotel/pages/secondpage.dart';
 import 'package:hotel/theme/theme.dart';
 
 class CardCategory extends StatelessWidget {
-  final String imageUrl;
-  final String title;
-  final String subtitle;
-  final String ratings;
+  final String? imageUrl;
+  final String? title;
+  final String? subtitle;
+  final String? ratings;
 
   CardCategory({this.imageUrl, this.title, this.subtitle, this.ratings});
   @override
@@ -35,7 +35,7 @@ class CardCategory extends StatelessWidget {
           child: Row(
             children: [
               Image.asset(
-                imageUrl,
+                imageUrl!,
                 //'asset/Mask Group 2.png',
                 width: 60,
               ),
@@ -46,18 +46,18 @@ class CardCategory extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    title,
+                    title!,
                     style: cardTitleHomePage,
                   ),
                   Text(
-                    subtitle,
+                    subtitle!,
                     style: cardsubTitleHomePage,
                   ),
                   SizedBox(
                     height: 8,
                   ),
                   Image.asset(
-                    ratings,
+                    ratings!,
                     //'asset/Ratings.png',
                     height: 10,
                   )

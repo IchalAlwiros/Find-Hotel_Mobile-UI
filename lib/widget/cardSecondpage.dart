@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hotel/theme/theme.dart';
 
 class SecondCardHotel extends StatelessWidget {
-  final String title;
-  final String imageUrl;
+  final String? title;
+  final String? imageUrl;
 
   SecondCardHotel({this.title, this.imageUrl});
   @override
@@ -33,7 +33,7 @@ class SecondCardHotel extends StatelessWidget {
                   topRight: Radius.circular(20),
                 ),
                 child: Image.asset(
-                  imageUrl,
+                  imageUrl!,
                   //'asset/image 4.png',
                   height: 110,
                   fit: BoxFit.cover,
@@ -46,7 +46,7 @@ class SecondCardHotel extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        title,
+                        title!,
                         style: secondCardText,
                       )
                     ],
