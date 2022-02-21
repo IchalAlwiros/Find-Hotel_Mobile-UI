@@ -38,7 +38,7 @@ TextStyle buttonBottomNav = GoogleFonts.poppins(
 );
 
 TextStyle textBottomNav = GoogleFonts.poppins(
-  color:Color(0xffF3C41E), fontWeight: FontWeight.w600, fontSize: 20.0
+  color:Colors.amber, fontWeight: FontWeight.w600, fontSize: 20.0
 );
 
 TextStyle cardsubTitleHomePage = GoogleFonts.poppins(
