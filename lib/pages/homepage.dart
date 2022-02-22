@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:hotel/theme/theme.dart';
-import 'package:hotel/widget/cardCategories.dart';
-import 'package:hotel/widget/cardHotel.dart';
+import 'package:hotel/pages/lib.dart';
 
 class HomePageHotel extends StatelessWidget {
   @override
