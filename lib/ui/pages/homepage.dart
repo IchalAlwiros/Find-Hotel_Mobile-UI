@@ -7,12 +7,15 @@ class HomePageHotel extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            _Headers(),
-            hotHotel(),
-            cardCategory(),
-          ],
+        child: GestureDetector(
+          onTap: () => FocusScope.of(context).unfocus(),
+          child: Column(
+            children: [
+              _Headers(),
+              hotHotel(),
+              cardCategory(),
+            ],
+          ),
         ),
       ),
     );
