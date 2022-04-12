@@ -1,4 +1,6 @@
-import 'package:hotel/pages/lib.dart';
+import 'package:flutter/material.dart';
+
+import 'lib_pages.dart';
 
 class HomePageHotel extends StatelessWidget {
   @override
@@ -18,7 +20,6 @@ class HomePageHotel extends StatelessWidget {
 
   Widget hotHotel() {
     return Container(
-      //color: Colors.black,
       child: Column(
         children: [
           Container(
@@ -147,12 +148,7 @@ class _Headers extends StatelessWidget {
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
-                suffixIcon:
-                    // IconButton(
-                    //   onPressed: () {},
-                    //   icon: Image.asset('asset/Search Button.png'),
-                    // ),
-                    IconButton(
+                suffixIcon: IconButton(
                   onPressed: () {},
                   icon: Icon(Icons.search_rounded),
                 ),

@@ -1,4 +1,4 @@
-import 'package:hotel/pages/lib.dart';
+import 'package:hotel/pages/lib_pages.dart';
 
 class SecondPage extends StatelessWidget {
   @override
@@ -120,26 +120,28 @@ class SecondPage extends StatelessWidget {
 
   Widget bottomNav() {
     return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
-        boxShadow: [
-          BoxShadow(
-            offset: Offset(3.0, 6.0),
-            blurRadius: 20,
-                //spreadRadius: 1.0,
-                color: Colors.grey,
-          )
-        ]
-      ),
-      
+      decoration: BoxDecoration(color: Colors.white, boxShadow: [
+        BoxShadow(
+          offset: Offset(3.0, 6.0),
+          blurRadius: 20,
+          //spreadRadius: 1.0,
+          color: Colors.grey,
+        )
+      ]),
       child: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20),
         child: Row(
           children: [
             Expanded(
               child: ListTile(
-                title: Text('Price', style: secondSubHomePage,),
-                subtitle: Text('\$70000', style:textBottomNav ,),
+                title: Text(
+                  'Price',
+                  style: secondSubHomePage,
+                ),
+                subtitle: Text(
+                  '\$70000',
+                  style: textBottomNav,
+                ),
               ),
             ),
 
