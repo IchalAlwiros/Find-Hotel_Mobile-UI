@@ -1,4 +1,4 @@
-import 'package:hotel/pages/lib_pages.dart';
+import 'package:hotel/ui/pages/lib_pages.dart';
 
 class SecondPage extends StatelessWidget {
   @override

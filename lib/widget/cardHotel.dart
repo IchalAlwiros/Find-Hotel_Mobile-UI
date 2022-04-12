@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hotel/pages/secondpage.dart';
+import 'package:hotel/ui/pages/secondpage.dart';
 import 'package:hotel/theme/theme.dart';
 
 class CardHotel extends StatelessWidget {
@@ -89,7 +89,6 @@ class CardHotel extends StatelessWidget {
               ),
             ],
           ),
-          
         ),
       ),
       // ),
